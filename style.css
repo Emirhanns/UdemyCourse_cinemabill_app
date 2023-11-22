@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(92, 0, 0);
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.title {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seat {
+    font-size: 35px;
+    margin: 6px;
+    color: lightgrey;
+}
+
+.seat:not(.full):hover {
+    transform: scale(1.2);
+}
+
+.movieMain {
+    margin-top: 15px;
+}
+
+#selectMovie {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Koltuk Statüleri BAŞLANGIÇ */
+
+.seatStatusMain {
+    margin-top: 20px;
+}
+
+.emptySeat {
+    color: lightgrey;
+    font-size: 16px;
+}
+
+.selectedSeat {
+    color: rgb(227, 227, 98);
+    font-size: 16px;
+}
+
+.fullSeat {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+
+.seatStatusMain>.row>div {
+    margin-right: 10px;
+}
+
+/* Koltuk Statüleri BİTİŞ */
+
+
+
+/* Sonuç Metni */
+.resultTextMain {
+    margin-top: 10px;
+}
+
+.resultTextMain>p {
+    color: lightgrey;
+    font-size: 18px;
+}
+
+.resultTextMain>p>span {
+    color: rgb(231, 231, 78);
+}
+
+/* Sonuç Metni */
+
+
+/* Butonlar Başlangıç */
+
+.buttonMain {
+    margin-top: 10px;
+}
+
+#buyButton {
+
+    align-items: center;
+    background-image: linear-gradient(144deg, #00ff00, #00ff1e 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 20%;
+    min-width: 140px;
+    padding: 10px 4px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+
+
+/* Buton Bitiş */
+
+
+/* KOLTUK RENKLERİ */
+
+.empty {
+    color: lightgrey;
+}
+
+.selected {
+    color: rgb(227, 227, 98);
+}
+
+.full {
+    color: rgb(0, 0, 0);
+}
